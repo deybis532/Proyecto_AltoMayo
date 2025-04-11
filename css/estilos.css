@@ -1,13 +1,12 @@
-/* Google Font */
+/* Fuentes y Base */
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
-  background-color: #e9c0c0;
-  color: #161515;
+  background-color: #fff8f0;
+  color: #333;
   line-height: 1.6;
 }
 
-/* Reusable container */
 .container {
   width: 90%;
   max-width: 1100px;
@@ -15,27 +14,29 @@ body {
   padding: 20px 0;
 }
 
-/* Hero/Header */
+/* Hero */
 .hero {
-  background: linear-gradient(rgba(189, 23, 23, 0.5), rgba(204, 143, 184, 0.5)),
-              url('plaza-de-armas-de-moyobamba.jpg') no-repeat center center/cover;
-  color: rgb(67, 40, 219);
-  padding: 180px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(5, 68, 52, 0.5)),
+              url('../img/plaza-de-armas-de-moyobamba.jpg') no-repeat center center/cover;
+  color: #fff;
   text-align: center;
+  padding: 150px 20px;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 3.2rem;
+  margin-bottom: 15px;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: auto;
 }
 
-/* Navigation */
+/* Navbar */
 nav {
-  background-color: #1645df;
+  background-color: #0c3f36;
 }
 
 nav ul {
@@ -43,6 +44,7 @@ nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 0;
   padding: 0;
 }
 
@@ -51,39 +53,78 @@ nav li {
 }
 
 nav a {
-  color: rgb(4, 2, 24);
+  color: #fff;
   text-decoration: none;
+  padding: 15px;
   display: block;
-  padding: 15px 0;
-  transition: color 0.3s;
+  font-weight: 600;
+  transition: background 0.3s;
 }
 
 nav a:hover {
-  color: #a7c0bc;
+  background-color: #1abc9c;
+  border-radius: 5px;
 }
 
 /* Intro Section */
 .intro {
-  padding: 40px 0;
+  text-align: center;
+  padding: 50px 0;
 }
 
 .intro h2 {
-  color: #828d8b;
+  color: #0c3f36;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.features li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+/* Image Sections */
+.image-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.image-section h2 {
+  font-size: 1.8rem;
+  color: #0c3f36;
   margin-bottom: 20px;
 }
 
-.intro ul {
-  padding-left: 20px;
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
 }
 
-.intro ul li {
-  margin-bottom: 10px;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 45%;
+  border-radius: 10px;
 }
 
 /* Footer */
 footer {
-  background-color: #1f1f1f;
-  color: rgb(21, 54, 238);
+  background-color: #0c3f36;
+  color: #fff;
   text-align: center;
   padding: 25px 0;
   margin-top: 50px;
@@ -93,15 +134,18 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+  }
+
+  .gallery img {
+    width: 100%;
   }
 
   nav ul {
     flex-direction: column;
-    align-items: center;
   }
 
   nav li {
-    margin: 10px 0;
+    margin: 5px 0;
   }
 }
