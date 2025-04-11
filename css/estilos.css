@@ -17,7 +17,7 @@ body {
 /* Hero */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(5, 68, 52, 0.5)),
-              url('../img/plaza-de-armas-de-moyobamba.jpg') no-repeat center center/cover;
+              url('..//css/plaza-de-armas-de-moyobamba.jpg') no-repeat center center/cover;
   color: #fff;
   text-align: center;
   padding: 150px 20px;
